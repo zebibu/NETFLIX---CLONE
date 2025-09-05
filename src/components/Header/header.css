@@ -1,0 +1,51 @@
+.header {
+  display: flex;
+  align-items: center;
+  padding: 30px 20px;
+  background-color: #111;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo-img {
+  height: 35px;
+  object-fit: contain;
+  margin-right: 38px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  flex: 1;
+}
+
+.nav-link {
+  color: #bbb;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: white;
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.kids {
+  color: #bbb;
+  font-size: 0.95rem;
+  text-decoration: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.kids:hover {
+  color: white;
+}

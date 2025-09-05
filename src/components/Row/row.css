@@ -1,0 +1,73 @@
+.row {
+  color: #fff;
+  margin-left: 20px;
+  margin-top: 30px;
+}
+
+.row h2 {
+  margin-left: 20px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.row-posters {
+  display: flex;
+  overflow-x: hidden; /* hide scroll */
+  overflow-y: hidden;
+  padding: 20px;
+  gap: 10px;
+  position: relative;
+}
+
+/* Each movie poster */
+.row-poster {
+  max-height: 150px;
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.3s;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.row-poster:hover {
+  transform: scale(1.1);
+  z-index: 10;
+}
+
+/* Large row (e.g., Top 10 or Originals) */
+.row-posterLarge {
+  max-height: 250px;
+}
+
+/* Arrow buttons */
+.row-container {
+  position: relative;
+}
+
+.row-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 100;
+  padding: 10px;
+  border-radius: 50%;
+  transition: background 0.3s;
+}
+
+.row-arrow:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.row-arrow.left {
+  left: 10px;
+}
+
+.row-arrow.right {
+  right: 10px;
+}
