@@ -1,73 +1,66 @@
 .row {
-  color: #fff;
+  color: white;
   margin-left: 20px;
-  margin-top: 30px;
 }
 
 .row h2 {
-  margin-left: 20px;
-  margin-bottom: 10px;
-  font-size: 20px;
-  font-weight: 600;
+  margin-left: 10px;
 }
 
-.row-posters {
-  display: flex;
-  overflow-x: hidden; /* hide scroll */
-  overflow-y: hidden;
-  padding: 20px;
-  gap: 10px;
-  position: relative;
-}
-
-/* Each movie poster */
-.row-poster {
-  max-height: 150px;
-  width: auto;
-  object-fit: contain;
-  transition: transform 0.3s;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.row-poster:hover {
-  transform: scale(1.1);
-  z-index: 10;
-}
-
-/* Large row (e.g., Top 10 or Originals) */
-.row-posterLarge {
-  max-height: 250px;
-}
-
-/* Arrow buttons */
+/* container for arrows + posters */
 .row-container {
   position: relative;
 }
 
+.row-posters {
+  display: flex;
+  overflow-x: hidden; /* hide native scrollbar */
+  gap: 10px;
+  padding: 20px 0;
+  scroll-behavior: smooth;
+}
+
+/* movie cards */
+.row-poster {
+  max-height: 180px;
+  object-fit: contain;
+  border-radius: 4px;
+  transition: transform 450ms;
+  cursor: pointer;
+}
+
+.row-poster:hover {
+  transform: scale(1.08);
+}
+
+/* arrows */
 .row-arrow {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 2rem;
   color: white;
+  background: rgba(0,0,0,0.5);
   border: none;
-  font-size: 30px;
   cursor: pointer;
-  z-index: 100;
-  padding: 10px;
+  z-index: 10;
+  padding: 5px 10px;
   border-radius: 50%;
-  transition: background 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.7;
+  transition: opacity 0.3s;
 }
 
 .row-arrow:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 1;
 }
 
 .row-arrow.left {
-  left: 10px;
+  left: 0;
 }
 
 .row-arrow.right {
-  right: 10px;
+  right: 0;
 }
