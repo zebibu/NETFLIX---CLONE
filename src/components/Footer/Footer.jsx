@@ -37,6 +37,10 @@ const Footer = () => {
             English
           </button>
         </div>
+
+        <div className="footer-bottom">
+          <p>© 2025 Netflix Clone. All rights reserved.</p>
+        </div>
       </div>
     </footer>
   );

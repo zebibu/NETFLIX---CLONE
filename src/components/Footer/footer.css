@@ -1,9 +1,8 @@
 .footer {
   background-color: #000;
   color: #757575;
-  padding: 30px 20px;
-  font-size: 12px;
-  position: relative; /* needed for absolute positioning of language button */
+  padding: 40px 20px;
+  font-size: 14px;
 }
 
 .footer-container {
@@ -13,43 +12,44 @@
 
 .footer-top {
   margin-bottom: 20px;
-  font-size: 14px;
+  font-size: 16px;
   color: #757575;
 }
 
-/* Footer links: 4 columns */
+/* 4-column grid for links */
 .footer-links {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  grid-template-columns: repeat(4, 1fr);
   gap: 12px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .footer-links a {
   color: #757575;
   text-decoration: none;
   transition: color 0.3s;
+  font-size: 14px;
 }
 
 .footer-links a:hover {
   color: #fff;
 }
 
-/* Language selector moved to left-bottom */
+/* Language button */
 .footer-lang {
-  position: absolute;
-  right: 120px;
-  bottom: 20px;
+  display: flex;
+  justify-content: flex-start; /* bottom left */
+  margin-bottom: 20px;
 }
 
 .language-btn {
   background: transparent;
   border: 1px solid #333;
   color: #757575;
-  padding: 8px 14px;
+  padding: 8px 16px;
   border-radius: 2px;
   cursor: pointer;
-  font-size: 12px;
+  font-size: 14px;
   display: flex;
   align-items: center;
 }
@@ -57,4 +57,11 @@
 .language-btn:hover {
   color: #fff;
   border-color: #fff;
+}
+
+/* Footer bottom text */
+.footer-bottom {
+  text-align: left;
+  font-size: 12px;
+  color: #757575;
 }
