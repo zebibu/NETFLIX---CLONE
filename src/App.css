@@ -1,5 +1,11 @@
 body {
   margin: 0;
+  padding: 0;
   background-color: #111;
   font-family: 'Arial', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }

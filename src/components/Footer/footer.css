@@ -1,8 +1,9 @@
 .footer {
   background-color: #000;
   color: #757575;
-  padding: 40px 20px;
-  font-size: 14px;
+  padding: 30px 20px;
+  font-size: 12px;
+  position: relative; /* needed for absolute positioning of language button */
 }
 
 .footer-container {
@@ -12,15 +13,16 @@
 
 .footer-top {
   margin-bottom: 20px;
-  font-size: 16px;
+  font-size: 14px;
   color: #757575;
 }
 
+/* Footer links: 4 columns */
 .footer-links {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
   gap: 12px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .footer-links a {
@@ -33,18 +35,21 @@
   color: #fff;
 }
 
+/* Language selector moved to left-bottom */
 .footer-lang {
-  margin-top: 20px;
+  position: absolute;
+  right: 120px;
+  bottom: 20px;
 }
 
 .language-btn {
   background: transparent;
   border: 1px solid #333;
   color: #757575;
-  padding: 8px 16px;
+  padding: 8px 14px;
   border-radius: 2px;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 12px;
   display: flex;
   align-items: center;
 }
