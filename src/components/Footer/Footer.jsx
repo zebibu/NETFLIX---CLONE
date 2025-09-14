@@ -1,5 +1,5 @@
 import React from "react";
-import "./Footer.css";
+import "./Footer.css"; 
 import { Globe } from "lucide-react"; // using lucide-react for the globe icon
 
 const Footer = () => {
