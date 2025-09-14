@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "../../api/axios";
 import requests from "../../api/requests";
 import { imageUrl } from "../../api/tmdb";
-import "./Banner.css";
+import "./banner.css";
 
 const Banner = () => {
   const [movie, setMovie] = useState(null);

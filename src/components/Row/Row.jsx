@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
-import "./Row.css";
+import "./row.css";
 
 const Row = ({ title, fetchUrl }) => {
   const [movies, setMovies] = useState([]);

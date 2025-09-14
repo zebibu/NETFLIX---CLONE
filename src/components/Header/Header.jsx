@@ -5,7 +5,7 @@ import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import logo from "../../assets/Images/Netflix-Logo.png";
-import "./Header.css";
+import "./header.css";
 
 const Header = () => {
   return (
